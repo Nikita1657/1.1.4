@@ -1,10 +1,8 @@
-.idea/
+idea
 *.iml
 *.ipr
-# Сборка
-target/
+target
 build/
-# Логи
 *.log
 *.class
 *.jar
