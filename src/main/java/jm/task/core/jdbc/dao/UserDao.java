@@ -9,6 +9,7 @@ public interface UserDao {
 
     void dropUsersTable();
 
+
     void saveUser(String name, String lastName, Byte age);
 
     void removeUserById(long id);
