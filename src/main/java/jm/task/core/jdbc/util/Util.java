@@ -31,7 +31,7 @@ public class Util {
 
     private static SessionFactory buildSessionFactory() {
         try {
-            // Создаем объект Configuration
+            // Создаем объект конфига
             Configuration configuration = new Configuration();
 
             // Настройки Hibernate
@@ -51,7 +51,7 @@ public class Util {
             // Добавляем классы юсеров
             configuration.addAnnotatedClass(User.class);
 
-            // Создаем SessionFactory
+            // Создаем сессию
             return configuration.buildSessionFactory();
         } catch (Exception e) {
             System.err.println("Ошибка при создании SessionFactory: " + e);
@@ -64,7 +64,7 @@ public class Util {
     }
 
     public static void shutdown() {
-        // Закрываем SessionFactory при завершении работы
+        // Закрываем сессию при завершении работы
         getSessionFactory().close();
     }
 }
